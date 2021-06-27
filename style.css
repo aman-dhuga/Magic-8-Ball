@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+body {
+  font-family: "Shrikhand", cursive;
+  background: #FAFBFB;
+
+}
+
+@media (max-width: 540px) {
+  .logo h1 {
+    font-size: 1.5em;
+  }
+
+  .logo h3 {
+    font-size: 1em;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .main input {
+    margin: 1em 0;
+    width: 80%;
+  }
+  .bottom {
+    margin-top: 1em;
+  }
+  .bottom h3 {
+    font-size: 1em;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+  margin: 1em;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+.label {
+  margin-right: 1em;
+}
+.button-enter {
+  background-color: #232b2b;
+  padding: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Shrikhand", cursive;
+}
+.button-enter:hover {
+  opacity: 0.5;
+}
+.input {
+  width: 50%;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 2em;
+  flex-direction: column;
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 43%,
+    100% 100%,
+    100% 100%,
+    50% 75%,
+    0 100%,
+    0% 43%,
+    0 0
+  );
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 43%,
+    100% 100%,
+    100% 100%,
+    50% 75%,
+    0 100%,
+    0% 43%,
+    0 0
+  );
+
+  background-color: #232b2b;
+  height: 50vh;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.display-top {
+  position: absolute;
+  top: 1em;
+}
+
+.fade-in {
+  animation: fadeIn 3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
